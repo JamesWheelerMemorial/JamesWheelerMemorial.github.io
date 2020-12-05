@@ -121,7 +121,7 @@ body {
   left:0;
   right:0;
   z-index:0;
-  color:rgb(204, 204, 204);
+  color:#433F41;
   display:flex;
   align-items: center;
   justify-content:center;
@@ -417,5 +417,9 @@ body {
   
   .homeButton:hover {
     color:rgb(115, 115, 115);
+  }
+
+  .loader {
+    color: rgb(204, 204, 204);
   }
 }
