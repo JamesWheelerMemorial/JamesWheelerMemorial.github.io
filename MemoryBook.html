@@ -30,6 +30,10 @@
   <div class="button previous-button"><i class="fas fa-chevron-left"></i></div>
   <div class="button next-button"><i class="fas fa-chevron-right"></i></div>
 
+  <div class="loader">
+    <p>Loading Images...</p>
+  </div>
+
   <div class="flipbook-viewport">
     <div class="container">
       <div class="flipbook">
@@ -124,7 +128,6 @@
 <script type="text/javascript">
 
   function loadApp() {
-
     $('.flipbook').turn({
       width: 2480,
       height: 900,
@@ -134,6 +137,8 @@
       when: {
         turning: function (event, page, view) {
           Hash.go('page/' + page).update();
+          $('.loader').hide();
+
         },
 
         swipeLeft: function () {
@@ -143,7 +148,7 @@
         swipeRight: function () {
           $(this).zoom('flipbook').turn('previous');
         },
-      }
+      }      
     });
     
     // Zoom event

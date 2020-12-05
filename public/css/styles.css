@@ -114,17 +114,30 @@ body {
 
 
 /* Book */ 
+.loader{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:0;
+  color:rgb(204, 204, 204);
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+
 .homeButton{
   position:fixed;
   text-decoration: none;
-  color:rgb(204, 204, 204);
+  color:#433F41;
   padding: 1rem;
   transition: .2s;
   z-index: 100;
 }
 
 .homeButton:hover {
-  color:rgb(115, 115, 115);
+  color:rgb(150, 150, 150);
   transition: .2s;
 }
 
@@ -345,7 +358,7 @@ body {
 }
 
 .bottom {
-  background-color:#211F20;
+  background-color:#433F41;
   padding:12px;
   color: #fff;
   position: absolute;
@@ -396,5 +409,13 @@ body {
 
   .bottom:hover {
     background-color:rgba(85, 85, 85, 1);
+  }
+
+  .homeButton{
+    color:rgb(204, 204, 204);
+  }
+  
+  .homeButton:hover {
+    color:rgb(115, 115, 115);
   }
 }
