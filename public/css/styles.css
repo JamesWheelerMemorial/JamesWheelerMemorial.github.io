@@ -1,5 +1,4 @@
 /* Basic sample */
-
 body {
   overflow: hidden;
   background-color: #ddd;
@@ -15,6 +14,118 @@ body {
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol";
+}
+
+/* Home */
+.cycle-slideshow {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.cycle-slideshow div {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero {
+  background-color: rgba(0, 0, 0, .4);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.name {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 2rem;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  margin:0;
+  margin-bottom:1rem;
+}
+
+#hero h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.25rem;
+  opacity: .8;
+  margin:0;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top:1rem;
+}
+
+.links a {
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: white;
+  opacity: .8;
+  border-bottom: 1px solid transparent;
+  padding-bottom: .25rem;
+  transition: .1s;
+}
+
+.links a:hover {
+  letter-spacing: 0.1rem;
+  transition: .2s;
+  border-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .name {
+    padding: 1rem;
+    margin-bottom: .5rem;
+
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: 0.25rem;
+  }
+
+  #hero h2 {
+    letter-spacing: 0.1rem;
+    line-height: 1;
+  }
+}
+
+
+/* Book */ 
+.homeButton{
+  position:fixed;
+  text-decoration: none;
+  color:rgb(204, 204, 204);
+  padding: 1rem;
+  transition: .2s;
+  z-index: 100;
+}
+
+.homeButton:hover {
+  color:rgb(115, 115, 115);
+  transition: .2s;
 }
 
 .button {
@@ -243,9 +354,47 @@ body {
   transition:.2s;
   text-decoration:none;
   z-index:200;
+
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.bottom i {
+  margin-right: .5rem;
 }
 
 .bottom:hover {
   transition:.2s;
   background-color: #616061;
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background:  #2A2B2E;    
+  }
+
+  .shadow {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) !important;
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) !important;
+    -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) !important ;
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) !important;
+  }
+
+
+  .bottom {
+    background-color:rgba(85,85,85,.7);
+    color:rgb(204, 204, 204);
+    transition:.2s;
+  }
+
+
+  .bottom:hover {
+    background-color:rgba(85, 85, 85, 1);
+  }
 }

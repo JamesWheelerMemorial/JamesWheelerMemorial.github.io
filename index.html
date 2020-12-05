@@ -18,83 +18,7 @@
   <script type="text/javascript" src="public/js/cycle.center.js"></script>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      border: none;
-    }
-
-    .cycle-slideshow {
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-
-    .cycle-slideshow div {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-size: cover;
-      background-position: center center;
-    }
-
-    #hero {
-      background-color: rgba(0, 0, 0, .4);
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      flex-direction: column;
-    }
-
-    .name {
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
-      padding: 2rem;
-
-    }
-
-    #hero h1 {
-      font-size: 3.5rem;
-      line-height: 1.3;
-      letter-spacing: 0.5rem;
-    }
-
-    #hero h2 {
-      text-transform: uppercase;
-      letter-spacing: 0.2rem;
-      font-size: 1.25rem;
-      line-height: 2;
-      opacity: .8;
-    }
-
-    .links {
-      display: flex;
-      align-items: center;
-    }
-
-    .links a {
-      letter-spacing: 0.1rem;
-      text-decoration: none;
-      color: white;
-      border-bottom: 1px solid transparent;
-      margin: 20px;
-      padding-bottom: .25rem;
-    }
-
-    .links a:hover {
-      letter-spacing: 0.1rem;
-      transition: .2s;
-      border-color: white;
-    }
+    
   </style>
 </head>
 
@@ -127,18 +51,19 @@
   </div>
 
   <header id="hero">
-    <div class="name">
-      <h1>James Wheeler</h1>
-      <h2>1958 - 2020</h2>
+    <div class="heroContent">
+      <div class="name">
+        <h1>James Wheeler</h1>
+        <h2>1958 - 2020</h2>
+      </div>
+  
+      <nav class="links">
+        <a href="MemoryBook.html">Memory Book</a>
+        <a href="https://open.spotify.com/playlist/3YQ8v04iZ6Mcm6KwMjisix?si=0uNFK0crSgudkzZrhu2tHA">Playlist</a>
+        <a href="https://youtu.be/tqVMckjeJos">Memorial Service</a>
+      </nav>
     </div>
-
-    <nav class="links">
-
-      <a href="MemoryBook.html">Memory Book</a>
-      <a >Memorial Service</a>
-      <a href="https://open.spotify.com/playlist/3YQ8v04iZ6Mcm6KwMjisix?si=0uNFK0crSgudkzZrhu2tHA">Playlist</a>
-    </nav>
-
+    
   </header>
 
 </body>
